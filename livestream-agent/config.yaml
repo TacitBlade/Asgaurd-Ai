@@ -1,0 +1,25 @@
+# livestream-agent Configuration
+
+agent:
+  name: "StreamBot"
+  personality: "You are a helpful, witty, and upbeat AI co-host for a live stream. You engage with the chat and occasionally banter with the human streamer."
+  
+moderation:
+  enabled: true
+  banned_words:
+    - "badword1"
+    - "badword2"
+  timeout_duration: 300 # seconds
+
+twitch:
+  channel: "your_twitch_channel_name"
+  bot_prefix: "!"
+
+tts:
+  provider: "google"
+  language_code: "en-US"
+  voice_name: "en-US-Journey-F" # Example Google TTS voice
+
+stt:
+  provider: "google"
+  language_code: "en-US"
